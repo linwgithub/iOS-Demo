@@ -14,7 +14,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="qSC-Lg-mmq">
-                                <rect key="frame" x="0.0" y="0.0" width="243" height="373"/>
+                                <rect key="frame" x="0.0" y="29" width="243" height="373"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="minion" id="IBM-44-9r7">
@@ -28,6 +28,7 @@
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
+                        <outlet property="centerImageView" destination="IBM-44-9r7" id="v41-Cn-3Zl"/>
                         <outlet property="showScrollView" destination="qSC-Lg-mmq" id="1WJ-GJ-TZ0"/>
                     </connections>
                 </viewController>

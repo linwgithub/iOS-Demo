@@ -8,8 +8,10 @@
 
 #import "ViewController.h"
 
-@interface ViewController ()
+
+@interface ViewController () <UIScrollViewDelegate>//遵守协议
 @property (weak, nonatomic) IBOutlet UIScrollView *showScrollView;
+@property (weak, nonatomic) IBOutlet UIImageView *centerImageView;
 
 @end
 
@@ -19,7 +21,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     //设置课件内容大小
-//    self.showScrollView.frame = self.view.bounds;
+    self.showScrollView.frame = self.view.bounds;
     //设置内容大小
     self.showScrollView.contentSize = CGSizeMake(892, 632);
     //设置边距
@@ -29,6 +31,38 @@
     self.showScrollView.contentOffset = CGPointMake(100, 100);
     //取消弹簧效果
     self.showScrollView.bounces = NO;
+    //设置代理
+    self.showScrollView.delegate = self;
+    //设置缩放比例
+    self.showScrollView.maximumZoomScale = 3.0;
+    self.showScrollView.minimumZoomScale = 0.2;
+}
+
+-(UIView *)viewForZoomingInScrollView:(UIScrollView *)scrollView
+{
+    //返回缩放的控件
+//    return [self.showScrollView.subviews lastObject];
+    return self.centerImageView;
+}
+
+-(void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate
+{
+    NSLog(@"结束拖拽");
+}
+
+-(void)scrollViewDidScroll:(UIScrollView *)scrollView
+{
+    NSLog(@"正在滚动");
+}
+
+-(void)scrollViewWillBeginDragging:(UIScrollView *)scrollView
+{
+    NSLog(@"开始拖拽");
+}
+
+-(void)scrollViewDidZoom:(UIScrollView *)scrollView
+{
+    NSLog(@"正在缩放");
 }
 
 - (void)didReceiveMemoryWarning {
