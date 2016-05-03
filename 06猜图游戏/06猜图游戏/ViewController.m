@@ -9,7 +9,7 @@
 #import "ViewController.h"
 #import "Question.h"
 
-@interface ViewController ()
+@interface ViewController () <UIAlertViewDelegate>
 @property (weak, nonatomic) IBOutlet UIButton *center_img;
 
 @property (weak, nonatomic) IBOutlet UILabel *noLabel;
@@ -19,7 +19,6 @@
 @property (weak, nonatomic) IBOutlet UIButton *btn_next;
 
 @property (weak, nonatomic) IBOutlet UIButton *sourceBtn;
-
 
 @property(nonatomic, weak)UIButton *cover;
 
@@ -74,6 +73,7 @@
  */
 - (IBAction)tip:(id)sender {
     
+    self.optionView.userInteractionEnabled = YES;
     //点击所有答案按钮
     for (UIButton *answerBtn in self.answerView.subviews) {
         [self answerClick:answerBtn];
@@ -81,11 +81,16 @@
     
     //取出答案
     Question *qusetion = self.questions[self.index];
+
     //取出答案的第一个字
-    NSString *firstAnswer = [qusetion.answer substringFromIndex:1];
+    NSString *firstAnswer = [qusetion.answer substringToIndex:1];
+        NSLog(@"same : %@",qusetion.answer);
+        NSLog(@" : %@",firstAnswer);
     for (UIButton *optionBtn in self.optionView.subviews) {
         if ([optionBtn.currentTitle isEqualToString:firstAnswer]) {
+            NSLog(@"same : %@",firstAnswer);
             [self optionBtnClick:optionBtn];
+            break;
         }
     }
     
@@ -155,6 +160,11 @@
 - (IBAction)next:(id)sender {
     //1、添加索引
     self.index++;
+    if (self.index == self.questions.count) {
+        UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"恭喜您通过了" message:@"后续内容，敬请期待" delegate:self cancelButtonTitle:@"取消" otherButtonTitles:nil, nil];
+        [alert show];
+        return;
+    }
     //2、取出模型
     Question *question = self.questions[self.index];
     //3、设置控件数据
@@ -164,6 +174,11 @@
     
     //5、添加待选答案
     [self addOptionsBtn:question];
+}
+
+-(void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+    
 }
 
 - (void)addOptionsBtn:(Question *)quetion
@@ -210,7 +225,6 @@
         
         //添加点击响应事件
         [optionBtn addTarget:self action:@selector(optionBtnClick:) forControlEvents:UIControlEventTouchUpInside];
-        
     }
 }
 
@@ -243,6 +257,7 @@
         }
     }
     if (full) {
+        self.optionView.userInteractionEnabled = NO;
         Question *question = self.questions[self.index];
         if ([tempAnswer isEqualToString:question.answer]) {
             //答案正确,修改文字颜色 蓝色
@@ -266,6 +281,7 @@
 
 - (void)addAnswerBtn:(Question *)question
 {
+    self.optionView.userInteractionEnabled = YES;
     //4.1 删除之前添加的所有按钮
     [self.answerView.subviews makeObjectsPerformSelector:@selector(removeFromSuperview)];
     
@@ -303,6 +319,7 @@
  */
 - (void)answerClick:(UIButton *)answerBtn
 {
+    self.optionView.userInteractionEnabled = YES;
    //1、显示对应的待选答案按钮
     for (UIButton *optionbtn in self.optionView.subviews) {
         if ([optionbtn.currentTitle isEqualToString:answerBtn.currentTitle] && optionbtn.hidden == YES) {
