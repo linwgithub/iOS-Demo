@@ -10,7 +10,7 @@
 #import "MyApp.h"
 #import "MyAppView.h"
 
-@interface ViewController ()
+@interface ViewController () <MyAppViewProtocao>
 
 /**
  *  app数组
@@ -45,6 +45,7 @@
         float y = marginx + row * (marginy + apph);
         
         MyAppView *appView = [MyAppView appViewWithAppData:self.apps[index]];
+        appView.delegate = self;
         appView.frame = CGRectMake(x, y, 85, 90);
 //        UIView *appView = [[UIView alloc]init];
 //        appView.backgroundColor = [UIColor grayColor];
@@ -125,4 +126,45 @@
     
     return _apps;
 }
+
+- (void)myAppViewDownloadBtnClick:(MyAppView *)myappView
+{
+    //取出数据
+    MyApp *app = myappView.appData;
+    
+    //设置标签
+    UILabel *label = [[UILabel alloc]init];
+    label.text = [NSString stringWithFormat:@"成功下载%@",app.name];
+    
+    label.font = [UIFont systemFontOfSize:12];
+    label.textColor = [UIColor whiteColor];
+    label.backgroundColor = [UIColor blackColor];
+    label.frame = CGRectMake(0, 0, 150, 30);
+    int w = self.view.bounds.size.width;
+    int h = self.view.bounds.size.height;
+    label.center = CGPointMake(w * 0.5, h * 0.5);
+    label.textAlignment = NSTextAlignmentCenter;
+    label.alpha = 0.0;
+    //设置圆角
+    label.layer.cornerRadius = 5;
+    label.clipsToBounds = YES;//其他层形状跟随主层
+    [self.view addSubview:label];
+    
+    [UIView animateWithDuration:1.0 animations:^{
+        label.alpha = 0.5;
+    } completion:^(BOOL finished) {
+        [UIView animateWithDuration:1.0 delay:1.0 options:UIViewAnimationOptionCurveLinear animations:^{
+            label.alpha = 0.0;
+        } completion:^(BOOL finished) {
+            [label removeFromSuperview];
+        }];
+    }];
+    
+    
+    
+    
+    
+    
+}
+
 @end

@@ -8,8 +8,19 @@
 
 #import <UIKit/UIKit.h>
 #import "MyApp.h"
+@class MyAppView;
+
+@protocol MyAppViewProtocao <NSObject>
+
+- (void)myAppViewDownloadBtnClick:(MyAppView *)myappView;
+
+@end
 
 @interface MyAppView : UIView
+
+@property(nonatomic, weak)id<MyAppViewProtocao> delegate;
+
+@property (nonatomic, strong)MyApp *appData;
 
 + (instancetype)appViewWithAppData:(MyApp *)appData;
 @end

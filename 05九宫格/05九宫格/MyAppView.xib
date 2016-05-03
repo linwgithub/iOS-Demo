@@ -28,6 +28,9 @@
                     <fontDescription key="fontDescription" type="system" pointSize="13"/>
                     <state key="normal" title="下载" backgroundImage="buttongreen"/>
                     <state key="highlighted" backgroundImage="buttongreen_highlighted"/>
+                    <connections>
+                        <action selector="downloadBtn:" destination="TZ7-vP-2zN" eventType="touchUpInside" id="1na-Um-bNd"/>
+                    </connections>
                 </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
