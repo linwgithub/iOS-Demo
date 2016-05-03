@@ -20,26 +20,32 @@
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Cbm-Xy-I80">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="finditem_ad" translatesAutoresizingMaskIntoConstraints="NO" id="jX8-ZZ-Xan">
-                                        <rect key="frame" x="15" y="44" width="140" height="140"/>
-                                    </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="finditem_hotpeople" translatesAutoresizingMaskIntoConstraints="NO" id="6E3-Vi-xhC">
-                                        <rect key="frame" x="165" y="44" width="140" height="140"/>
-                                    </imageView>
+                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MNG-YG-ais">
+                                        <rect key="frame" x="15" y="44" width="290" height="130"/>
+                                    </scrollView>
+                                    <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="C3i-8X-ncO">
+                                        <rect key="frame" x="140" y="136" width="39" height="37"/>
+                                    </pageControl>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="finditem_hotsound" translatesAutoresizingMaskIntoConstraints="NO" id="3jP-On-Fs2">
-                                        <rect key="frame" x="15" y="204" width="140" height="140"/>
+                                        <rect key="frame" x="15" y="194" width="140" height="140"/>
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="finditem_newpeople" translatesAutoresizingMaskIntoConstraints="NO" id="1lG-zo-mpU">
-                                        <rect key="frame" x="165" y="204" width="140" height="140"/>
+                                        <rect key="frame" x="165" y="194" width="140" height="140"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="finditem_ad" translatesAutoresizingMaskIntoConstraints="NO" id="jX8-ZZ-Xan">
+                                        <rect key="frame" x="15" y="354" width="140" height="140"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="finditem_hotpeople" translatesAutoresizingMaskIntoConstraints="NO" id="6E3-Vi-xhC">
+                                        <rect key="frame" x="165" y="354" width="140" height="140"/>
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="finditem_wallspoint" translatesAutoresizingMaskIntoConstraints="NO" id="SuJ-xO-yMx">
-                                        <rect key="frame" x="165" y="364" width="140" height="140"/>
+                                        <rect key="frame" x="165" y="514" width="140" height="140"/>
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="finditem_newsound" translatesAutoresizingMaskIntoConstraints="NO" id="qQG-lb-FOF">
-                                        <rect key="frame" x="15" y="364" width="140" height="140"/>
+                                        <rect key="frame" x="15" y="514" width="140" height="140"/>
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="finditem_iwannabehere" translatesAutoresizingMaskIntoConstraints="NO" id="tgg-xf-e5H">
-                                        <rect key="frame" x="15" y="520" width="290" height="80"/>
+                                        <rect key="frame" x="15" y="674" width="290" height="80"/>
                                     </imageView>
                                 </subviews>
                             </scrollView>
@@ -92,6 +98,8 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="mainScrollView" destination="Cbm-Xy-I80" id="mRG-h6-sFo"/>
+                        <outlet property="titlePageControl" destination="C3i-8X-ncO" id="pgp-QB-7pT"/>
+                        <outlet property="titleScrollView" destination="MNG-YG-ais" id="jxk-ku-Jca"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
