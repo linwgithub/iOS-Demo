@@ -77,5 +77,23 @@
     return cell;
 }
 
+//实现分组头部
+- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section{
+    CarGroup *group = self.groups[section];
+    
+    return group.title;
+}
+
+//实现分组尾部
+- (NSString *)tableView:(UITableView *)tableView titleForFooterInSection:(NSInteger)section
+{
+    return @"分组尾部";
+}
+
+//实现右边索引
+- (NSArray<NSString *> *)sectionIndexTitlesForTableView:(UITableView *)tableView
+{
+    return [self.groups valueForKeyPath:@"title"];
+}
 
 @end
