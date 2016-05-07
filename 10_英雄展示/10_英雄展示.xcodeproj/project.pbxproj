@@ -13,6 +13,8 @@
 		3592DEEF1CDDB3B900B03D21 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3592DEED1CDDB3B900B03D21 /* Main.storyboard */; };
 		3592DEF11CDDB3B900B03D21 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3592DEF01CDDB3B900B03D21 /* Assets.xcassets */; };
 		3592DEF41CDDB3B900B03D21 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3592DEF21CDDB3B900B03D21 /* LaunchScreen.storyboard */; };
+		3592DEFC1CDDB43F00B03D21 /* heros.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3592DEFB1CDDB43F00B03D21 /* heros.plist */; };
+		3592DEFF1CDDB6D400B03D21 /* hero.m in Sources */ = {isa = PBXBuildFile; fileRef = 3592DEFE1CDDB6D400B03D21 /* hero.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,9 @@
 		3592DEF01CDDB3B900B03D21 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3592DEF31CDDB3B900B03D21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3592DEF51CDDB3B900B03D21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3592DEFB1CDDB43F00B03D21 /* heros.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = heros.plist; path = "../../../../../data/0330/代码/09-数据刷新/04-英雄展示/heros.plist"; sourceTree = "<group>"; };
+		3592DEFD1CDDB6D400B03D21 /* hero.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hero.h; sourceTree = "<group>"; };
+		3592DEFE1CDDB6D400B03D21 /* hero.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = hero.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +72,8 @@
 				3592DEF21CDDB3B900B03D21 /* LaunchScreen.storyboard */,
 				3592DEF51CDDB3B900B03D21 /* Info.plist */,
 				3592DEE41CDDB3B800B03D21 /* Supporting Files */,
+				3592DEFD1CDDB6D400B03D21 /* hero.h */,
+				3592DEFE1CDDB6D400B03D21 /* hero.m */,
 			);
 			path = "10_英雄展示";
 			sourceTree = "<group>";
@@ -74,6 +81,7 @@
 		3592DEE41CDDB3B800B03D21 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				3592DEFB1CDDB43F00B03D21 /* heros.plist */,
 				3592DEE51CDDB3B800B03D21 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -138,6 +146,7 @@
 			files = (
 				3592DEF41CDDB3B900B03D21 /* LaunchScreen.storyboard in Resources */,
 				3592DEF11CDDB3B900B03D21 /* Assets.xcassets in Resources */,
+				3592DEFC1CDDB43F00B03D21 /* heros.plist in Resources */,
 				3592DEEF1CDDB3B900B03D21 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -152,6 +161,7 @@
 				3592DEEC1CDDB3B900B03D21 /* ViewController.m in Sources */,
 				3592DEE91CDDB3B900B03D21 /* AppDelegate.m in Sources */,
 				3592DEE61CDDB3B800B03D21 /* main.m in Sources */,
+				3592DEFF1CDDB6D400B03D21 /* hero.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
