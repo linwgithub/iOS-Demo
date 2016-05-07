@@ -25,15 +25,18 @@
 
 - (NSArray *)heros
 {
-    NSString *path = [[NSBundle mainBundle] pathForResource:@"heros.plist" ofType:nil];
-    
-    NSArray *dictArray = [NSArray arrayWithContentsOfFile:path];
-    NSMutableArray *heroArray = [NSMutableArray array];
-    for (NSDictionary *dict in dictArray) {
-        hero *herodata = [hero heroWithDict:dict];
-        [heroArray addObject:herodata];
+    if (_heros == nil) {
+        NSString *path = [[NSBundle mainBundle] pathForResource:@"heros.plist" ofType:nil];
+        
+        NSArray *dictArray = [NSArray arrayWithContentsOfFile:path];
+        NSMutableArray *heroArray = [NSMutableArray array];
+        for (NSDictionary *dict in dictArray) {
+            hero *herodata = [hero heroWithDict:dict];
+            [heroArray addObject:herodata];
+        }
+        _heros = heroArray;
     }
-    _heros = heroArray;
+    
     return _heros;
 }
 
@@ -88,14 +91,17 @@
     NSLog(@"name:%@",name);
     //3、修改数据源
     heroData.name = name;
+    NSLog(@"name:%@",heroData.name);
     
     //4、刷新列表
     //4.1全部属性
 //    [self.table reloadData];
     //4.2部分刷新
+//    NSIndexPath *path = [NSIndexPath indexPathForRow:row inSection:0];
+//    [self.table reloadRowsAtIndexPaths:@[path] withRowAnimation:UITableViewRowAnimationAutomatic];
+////
     NSIndexPath *path = [NSIndexPath indexPathForRow:row inSection:0];
-    [self.table reloadRowsAtIndexPaths:@[path] withRowAnimation:UITableViewRowAnimationAutomatic];
-//
+    [self.table reloadRowsAtIndexPaths:@[path] withRowAnimation:UITableViewRowAnimationBottom];
 }
 
 @end
