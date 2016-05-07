@@ -9,7 +9,8 @@
 #import "ViewController.h"
 #import "hero.h"
 
-@interface ViewController ()<UITableViewDataSource>
+@interface ViewController ()<UITableViewDataSource,UITableViewDelegate,UIAlertViewDelegate>
+@property (weak, nonatomic) IBOutlet UITableView *table;
 
 @property(nonatomic, strong)NSArray *heros;
 
@@ -60,6 +61,41 @@
 - (BOOL)prefersStatusBarHidden
 {
     return YES;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    hero *heroData = self.heros[indexPath.row];
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"数据展示" message:nil delegate:self cancelButtonTitle:@"取消" otherButtonTitles:@"确定", nil];
+    
+    alert.alertViewStyle = UIAlertViewStylePlainTextInput;
+    [alert textFieldAtIndex:0].text = heroData.name;
+    [alert show];
+    alert.tag = indexPath.row;
+}
+
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+    
+    if (buttonIndex == 0)
+        return;
+    NSLog(@"change data");
+    //1、取出修改的数据
+    NSString *name = [alertView textFieldAtIndex:0].text;
+    //2、取出数据源
+    int row = alertView.tag;
+    hero *heroData = self.heros[row];
+    NSLog(@"name:%@",name);
+    //3、修改数据源
+    heroData.name = name;
+    
+    //4、刷新列表
+    //4.1全部属性
+//    [self.table reloadData];
+    //4.2部分刷新
+    NSIndexPath *path = [NSIndexPath indexPathForRow:row inSection:0];
+    [self.table reloadRowsAtIndexPaths:@[path] withRowAnimation:UITableViewRowAnimationAutomatic];
+//
 }
 
 @end
