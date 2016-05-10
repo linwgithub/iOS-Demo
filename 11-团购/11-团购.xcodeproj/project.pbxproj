@@ -17,6 +17,9 @@
 		357EC38A1CDF469C003F6BBF /* Tg.m in Sources */ = {isa = PBXBuildFile; fileRef = 357EC3891CDF469C003F6BBF /* Tg.m */; };
 		357EC38F1CDF4C88003F6BBF /* TgCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 357EC38E1CDF4C88003F6BBF /* TgCell.xib */; };
 		357EC3921CDF4CC0003F6BBF /* TgCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 357EC3911CDF4CC0003F6BBF /* TgCell.m */; };
+		35DE09241CE19B7800B53B05 /* TgFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 35DE09231CE19B7800B53B05 /* TgFooterView.m */; };
+		35DE09271CE19B9400B53B05 /* TgHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 35DE09261CE19B9400B53B05 /* TgHeaderView.m */; };
+		35DE09291CE19BAA00B53B05 /* TgFooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 35DE09281CE19BAA00B53B05 /* TgFooterView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +39,11 @@
 		357EC38E1CDF4C88003F6BBF /* TgCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TgCell.xib; sourceTree = "<group>"; };
 		357EC3901CDF4CC0003F6BBF /* TgCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TgCell.h; sourceTree = "<group>"; };
 		357EC3911CDF4CC0003F6BBF /* TgCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TgCell.m; sourceTree = "<group>"; };
+		35DE09221CE19B7800B53B05 /* TgFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TgFooterView.h; sourceTree = "<group>"; };
+		35DE09231CE19B7800B53B05 /* TgFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TgFooterView.m; sourceTree = "<group>"; };
+		35DE09251CE19B9400B53B05 /* TgHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TgHeaderView.h; sourceTree = "<group>"; };
+		35DE09261CE19B9400B53B05 /* TgHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TgHeaderView.m; sourceTree = "<group>"; };
+		35DE09281CE19BAA00B53B05 /* TgFooterView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TgFooterView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +72,11 @@
 				357EC38E1CDF4C88003F6BBF /* TgCell.xib */,
 				357EC3901CDF4CC0003F6BBF /* TgCell.h */,
 				357EC3911CDF4CC0003F6BBF /* TgCell.m */,
+				35DE09221CE19B7800B53B05 /* TgFooterView.h */,
+				35DE09231CE19B7800B53B05 /* TgFooterView.m */,
+				35DE09251CE19B9400B53B05 /* TgHeaderView.h */,
+				35DE09261CE19B9400B53B05 /* TgHeaderView.m */,
+				35DE09281CE19BAA00B53B05 /* TgFooterView.xib */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -186,6 +199,7 @@
 			files = (
 				357EC37F1CDF460F003F6BBF /* LaunchScreen.storyboard in Resources */,
 				357EC3871CDF4671003F6BBF /* tgs.plist in Resources */,
+				35DE09291CE19BAA00B53B05 /* TgFooterView.xib in Resources */,
 				357EC38F1CDF4C88003F6BBF /* TgCell.xib in Resources */,
 				357EC37C1CDF460F003F6BBF /* Assets.xcassets in Resources */,
 				357EC37A1CDF460F003F6BBF /* Main.storyboard in Resources */,
@@ -199,10 +213,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35DE09271CE19B9400B53B05 /* TgHeaderView.m in Sources */,
 				357EC3771CDF460F003F6BBF /* ViewController.m in Sources */,
 				357EC3741CDF460F003F6BBF /* AppDelegate.m in Sources */,
 				357EC38A1CDF469C003F6BBF /* Tg.m in Sources */,
 				357EC3921CDF4CC0003F6BBF /* TgCell.m in Sources */,
+				35DE09241CE19B7800B53B05 /* TgFooterView.m in Sources */,
 				357EC3711CDF460F003F6BBF /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
