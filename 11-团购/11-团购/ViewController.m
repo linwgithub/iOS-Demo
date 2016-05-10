@@ -10,6 +10,7 @@
 #import "Tg.h"
 #import "TgCell.h"
 #import "TgFooterView.h"
+#import "TgHeaderView.h"
 
 @interface ViewController ()<UITableViewDataSource,TgFooterViewDelegate>
 
@@ -29,6 +30,9 @@
     TgFooterView *footView = [TgFooterView tgFooterView];
     footView.delegate = self;
     self.tableView.tableFooterView = footView;
+    
+    TgHeaderView *headerView = [TgHeaderView tgHeaderView];
+    self.tableView.tableHeaderView = headerView;
 }
 
 - (void)tgFooterViewDidClockLoadBtn:(TgFooterView *)footerView

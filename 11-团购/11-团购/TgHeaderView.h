@@ -10,4 +10,5 @@
 
 @interface TgHeaderView : UIView
 
++ (instancetype)tgHeaderView;
 @end

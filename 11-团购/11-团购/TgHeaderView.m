@@ -18,4 +18,8 @@
 }
 */
 
++ (instancetype)tgHeaderView
+{
+    return [[[NSBundle mainBundle]loadNibNamed:@"TgHeaderView" owner:nil options:nil]lastObject];
+}
 @end
