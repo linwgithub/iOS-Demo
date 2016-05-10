@@ -47,7 +47,7 @@
     self.priceText.text = [NSString stringWithFormat:@"￥ %@",tg.price];
     
     //4.购买人数
-    self.buyCountText.text = [NSString stringWithFormat:@"已购买人数：%@",tg.buyCount];
+    self.buyCountText.text = [NSString stringWithFormat:@"已购:%@",tg.buyCount];
     
 }
 - (void)awakeFromNib {

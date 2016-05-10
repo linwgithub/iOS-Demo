@@ -49,6 +49,43 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		35174EFE1CE13D4A005FECD9 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				357EC3721CDF460F003F6BBF /* AppDelegate.h */,
+				357EC3731CDF460F003F6BBF /* AppDelegate.m */,
+			);
+			name = Other;
+			sourceTree = "<group>";
+		};
+		35174EFF1CE13D5A005FECD9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				357EC38E1CDF4C88003F6BBF /* TgCell.xib */,
+				357EC3901CDF4CC0003F6BBF /* TgCell.h */,
+				357EC3911CDF4CC0003F6BBF /* TgCell.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		35174F001CE13D76005FECD9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				357EC3881CDF469C003F6BBF /* Tg.h */,
+				357EC3891CDF469C003F6BBF /* Tg.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		35174F011CE13D8B005FECD9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				357EC3751CDF460F003F6BBF /* ViewController.h */,
+				357EC3761CDF460F003F6BBF /* ViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
 		357EC3631CDF460F003F6BBF = {
 			isa = PBXGroup;
 			children = (
@@ -68,20 +105,15 @@
 		357EC36E1CDF460F003F6BBF /* 11-团购 */ = {
 			isa = PBXGroup;
 			children = (
-				357EC3721CDF460F003F6BBF /* AppDelegate.h */,
-				357EC3731CDF460F003F6BBF /* AppDelegate.m */,
-				357EC3751CDF460F003F6BBF /* ViewController.h */,
-				357EC3761CDF460F003F6BBF /* ViewController.m */,
+				35174F011CE13D8B005FECD9 /* Controller */,
+				35174F001CE13D76005FECD9 /* Model */,
+				35174EFF1CE13D5A005FECD9 /* View */,
+				35174EFE1CE13D4A005FECD9 /* Other */,
 				357EC3781CDF460F003F6BBF /* Main.storyboard */,
 				357EC37B1CDF460F003F6BBF /* Assets.xcassets */,
 				357EC37D1CDF460F003F6BBF /* LaunchScreen.storyboard */,
 				357EC3801CDF460F003F6BBF /* Info.plist */,
 				357EC36F1CDF460F003F6BBF /* Supporting Files */,
-				357EC3881CDF469C003F6BBF /* Tg.h */,
-				357EC3891CDF469C003F6BBF /* Tg.m */,
-				357EC38E1CDF4C88003F6BBF /* TgCell.xib */,
-				357EC3901CDF4CC0003F6BBF /* TgCell.h */,
-				357EC3911CDF4CC0003F6BBF /* TgCell.m */,
 			);
 			path = "11-团购";
 			sourceTree = "<group>";
@@ -320,6 +352,7 @@
 				357EC3851CDF460F003F6BBF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

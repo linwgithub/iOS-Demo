@@ -12,7 +12,7 @@
 
 @interface ViewController ()<UITableViewDataSource>
 
-@property(nonatomic, strong)NSArray *tgs;
+@property(nonatomic, strong)NSMutableArray *tgs;
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 
