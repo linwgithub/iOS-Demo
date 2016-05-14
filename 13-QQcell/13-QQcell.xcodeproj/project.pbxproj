@@ -7,21 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		354E0B541CE6A5530051D9A8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 354E0B531CE6A5530051D9A8 /* AppDelegate.m */; };
+		354E0B571CE6A55C0051D9A8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 354E0B561CE6A55C0051D9A8 /* ViewController.m */; };
+		354E0B5A1CE6A5700051D9A8 /* QQMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 354E0B591CE6A5700051D9A8 /* QQMessage.m */; };
 		35645B2F1CE62E45005E24D1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 35645B2E1CE62E45005E24D1 /* main.m */; };
 		35645B381CE62E45005E24D1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35645B361CE62E45005E24D1 /* Main.storyboard */; };
 		35645B3A1CE62E45005E24D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35645B391CE62E45005E24D1 /* Assets.xcassets */; };
 		35645B3D1CE62E45005E24D1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35645B3B1CE62E45005E24D1 /* LaunchScreen.storyboard */; };
-		35645B451CE62E6E005E24D1 /* Class in Resources */ = {isa = PBXBuildFile; fileRef = 35645B441CE62E6E005E24D1 /* Class */; };
+		35645B471CE6A401005E24D1 /* messages.plist in Resources */ = {isa = PBXBuildFile; fileRef = 35645B461CE6A401005E24D1 /* messages.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		354E0B521CE6A5530051D9A8 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		354E0B531CE6A5530051D9A8 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		354E0B551CE6A55C0051D9A8 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		354E0B561CE6A55C0051D9A8 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		354E0B581CE6A5700051D9A8 /* QQMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QQMessage.h; sourceTree = "<group>"; };
+		354E0B591CE6A5700051D9A8 /* QQMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QQMessage.m; sourceTree = "<group>"; };
 		35645B2A1CE62E45005E24D1 /* 13-QQcell.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "13-QQcell.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		35645B2E1CE62E45005E24D1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		35645B371CE62E45005E24D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		35645B391CE62E45005E24D1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		35645B3C1CE62E45005E24D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		35645B3E1CE62E45005E24D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		35645B441CE62E6E005E24D1 /* Class */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Class; sourceTree = "<group>"; };
+		35645B461CE6A401005E24D1 /* messages.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = messages.plist; path = "../../../../../0402/代码/02-QQ聊天布局(修正时间的显示)/01-QQ聊天布局/messages.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +43,51 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		354E0B4D1CE6A50D0051D9A8 /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				354E0B4E1CE6A50D0051D9A8 /* Controller */,
+				354E0B4F1CE6A50D0051D9A8 /* Model */,
+				354E0B501CE6A50D0051D9A8 /* Other */,
+				354E0B511CE6A50D0051D9A8 /* View */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		354E0B4E1CE6A50D0051D9A8 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				354E0B551CE6A55C0051D9A8 /* ViewController.h */,
+				354E0B561CE6A55C0051D9A8 /* ViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		354E0B4F1CE6A50D0051D9A8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				354E0B581CE6A5700051D9A8 /* QQMessage.h */,
+				354E0B591CE6A5700051D9A8 /* QQMessage.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		354E0B501CE6A50D0051D9A8 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				354E0B521CE6A5530051D9A8 /* AppDelegate.h */,
+				354E0B531CE6A5530051D9A8 /* AppDelegate.m */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		354E0B511CE6A50D0051D9A8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		35645B211CE62E45005E24D1 = {
 			isa = PBXGroup;
 			children = (
@@ -54,11 +107,10 @@
 		35645B2C1CE62E45005E24D1 /* 13-QQcell */ = {
 			isa = PBXGroup;
 			children = (
-				35645B441CE62E6E005E24D1 /* Class */,
+				354E0B4D1CE6A50D0051D9A8 /* Class */,
 				35645B361CE62E45005E24D1 /* Main.storyboard */,
 				35645B391CE62E45005E24D1 /* Assets.xcassets */,
 				35645B3B1CE62E45005E24D1 /* LaunchScreen.storyboard */,
-				35645B3E1CE62E45005E24D1 /* Info.plist */,
 				35645B2D1CE62E45005E24D1 /* Supporting Files */,
 			);
 			path = "13-QQcell";
@@ -67,6 +119,7 @@
 		35645B2D1CE62E45005E24D1 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				35645B461CE6A401005E24D1 /* messages.plist */,
 				35645B2E1CE62E45005E24D1 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -131,8 +184,8 @@
 			files = (
 				35645B3D1CE62E45005E24D1 /* LaunchScreen.storyboard in Resources */,
 				35645B3A1CE62E45005E24D1 /* Assets.xcassets in Resources */,
+				35645B471CE6A401005E24D1 /* messages.plist in Resources */,
 				35645B381CE62E45005E24D1 /* Main.storyboard in Resources */,
-				35645B451CE62E6E005E24D1 /* Class in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,6 +196,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				354E0B571CE6A55C0051D9A8 /* ViewController.m in Sources */,
+				354E0B5A1CE6A5700051D9A8 /* QQMessage.m in Sources */,
+				354E0B541CE6A5530051D9A8 /* AppDelegate.m in Sources */,
 				35645B2F1CE62E45005E24D1 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -292,6 +348,7 @@
 				35645B431CE62E46005E24D1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
