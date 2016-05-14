@@ -15,6 +15,7 @@
 		35645B3A1CE62E45005E24D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35645B391CE62E45005E24D1 /* Assets.xcassets */; };
 		35645B3D1CE62E45005E24D1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35645B3B1CE62E45005E24D1 /* LaunchScreen.storyboard */; };
 		35645B471CE6A401005E24D1 /* messages.plist in Resources */ = {isa = PBXBuildFile; fileRef = 35645B461CE6A401005E24D1 /* messages.plist */; };
+		3587380A1CE77AE900B0C610 /* QQMessageFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 358738091CE77AE900B0C610 /* QQMessageFrame.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,8 @@
 		35645B391CE62E45005E24D1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		35645B3C1CE62E45005E24D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		35645B461CE6A401005E24D1 /* messages.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = messages.plist; path = "../../../../../0402/代码/02-QQ聊天布局(修正时间的显示)/01-QQ聊天布局/messages.plist"; sourceTree = "<group>"; };
+		358738081CE77AE900B0C610 /* QQMessageFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QQMessageFrame.h; sourceTree = "<group>"; };
+		358738091CE77AE900B0C610 /* QQMessageFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QQMessageFrame.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +71,8 @@
 			children = (
 				354E0B581CE6A5700051D9A8 /* QQMessage.h */,
 				354E0B591CE6A5700051D9A8 /* QQMessage.m */,
+				358738081CE77AE900B0C610 /* QQMessageFrame.h */,
+				358738091CE77AE900B0C610 /* QQMessageFrame.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -200,6 +205,7 @@
 				354E0B5A1CE6A5700051D9A8 /* QQMessage.m in Sources */,
 				354E0B541CE6A5530051D9A8 /* AppDelegate.m in Sources */,
 				35645B2F1CE62E45005E24D1 /* main.m in Sources */,
+				3587380A1CE77AE900B0C610 /* QQMessageFrame.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

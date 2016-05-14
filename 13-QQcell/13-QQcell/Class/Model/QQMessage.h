@@ -10,7 +10,7 @@
 
 typedef enum {
     QQMessageTypeMe = 0,//自己
-    QQMessageTypeOther//别人
+    QQMessageTypeOther  //别人
     
 } QQMessageType;
 
