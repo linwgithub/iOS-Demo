@@ -1,0 +1,383 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		357305F71CE9DF0100652F19 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 357305F61CE9DF0100652F19 /* main.m */; };
+		357306001CE9DF0100652F19 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 357305FE1CE9DF0100652F19 /* Main.storyboard */; };
+		357306021CE9DF0100652F19 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 357306011CE9DF0100652F19 /* Assets.xcassets */; };
+		357306051CE9DF0100652F19 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 357306031CE9DF0100652F19 /* LaunchScreen.storyboard */; };
+		3573060D1CE9E12B00652F19 /* messages.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3573060C1CE9E12B00652F19 /* messages.plist */; };
+		357306171CE9E1E000652F19 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 357306111CE9E1E000652F19 /* ViewController.m */; };
+		357306181CE9E1E000652F19 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 357306151CE9E1E000652F19 /* AppDelegate.m */; };
+		3573061B1CE9E21400652F19 /* QQMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 3573061A1CE9E21400652F19 /* QQMessage.m */; };
+		3573061E1CE9E42300652F19 /* QQMessageFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 3573061D1CE9E42300652F19 /* QQMessageFrame.m */; };
+		357306211CE9EB2E00652F19 /* QQMessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 357306201CE9EB2E00652F19 /* QQMessageCell.m */; };
+		357306251CEA292C00652F19 /* UIImage+ensize.m in Sources */ = {isa = PBXBuildFile; fileRef = 357306241CEA292C00652F19 /* UIImage+ensize.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		357305F21CE9DF0100652F19 /* 13-QQMessageCell.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "13-QQMessageCell.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		357305F61CE9DF0100652F19 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		357305FF1CE9DF0100652F19 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		357306011CE9DF0100652F19 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		357306041CE9DF0100652F19 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		357306061CE9DF0100652F19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3573060C1CE9E12B00652F19 /* messages.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = messages.plist; path = "../../../../../0402/代码/01-QQ聊天布局/01-QQ聊天布局/messages.plist"; sourceTree = "<group>"; };
+		357306101CE9E1E000652F19 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		357306111CE9E1E000652F19 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		357306141CE9E1E000652F19 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		357306151CE9E1E000652F19 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		357306191CE9E21400652F19 /* QQMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QQMessage.h; sourceTree = "<group>"; };
+		3573061A1CE9E21400652F19 /* QQMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QQMessage.m; sourceTree = "<group>"; };
+		3573061C1CE9E42300652F19 /* QQMessageFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QQMessageFrame.h; sourceTree = "<group>"; };
+		3573061D1CE9E42300652F19 /* QQMessageFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QQMessageFrame.m; sourceTree = "<group>"; };
+		3573061F1CE9EB2E00652F19 /* QQMessageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QQMessageCell.h; sourceTree = "<group>"; };
+		357306201CE9EB2E00652F19 /* QQMessageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QQMessageCell.m; sourceTree = "<group>"; };
+		357306231CEA292C00652F19 /* UIImage+ensize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ensize.h"; sourceTree = "<group>"; };
+		357306241CEA292C00652F19 /* UIImage+ensize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ensize.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		357305EF1CE9DF0100652F19 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		357305E91CE9DF0100652F19 = {
+			isa = PBXGroup;
+			children = (
+				357305F41CE9DF0100652F19 /* 13-QQMessageCell */,
+				357305F31CE9DF0100652F19 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		357305F31CE9DF0100652F19 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				357305F21CE9DF0100652F19 /* 13-QQMessageCell.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		357305F41CE9DF0100652F19 /* 13-QQMessageCell */ = {
+			isa = PBXGroup;
+			children = (
+				3573060E1CE9E1E000652F19 /* Classes */,
+				357305FE1CE9DF0100652F19 /* Main.storyboard */,
+				357306011CE9DF0100652F19 /* Assets.xcassets */,
+				357306031CE9DF0100652F19 /* LaunchScreen.storyboard */,
+				357306061CE9DF0100652F19 /* Info.plist */,
+				357305F51CE9DF0100652F19 /* Supporting Files */,
+			);
+			path = "13-QQMessageCell";
+			sourceTree = "<group>";
+		};
+		357305F51CE9DF0100652F19 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3573060C1CE9E12B00652F19 /* messages.plist */,
+				357305F61CE9DF0100652F19 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3573060E1CE9E1E000652F19 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				357306221CEA28CA00652F19 /* Catagory */,
+				3573060F1CE9E1E000652F19 /* Controller */,
+				357306121CE9E1E000652F19 /* Model */,
+				357306131CE9E1E000652F19 /* Other */,
+				357306161CE9E1E000652F19 /* View */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		3573060F1CE9E1E000652F19 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				357306101CE9E1E000652F19 /* ViewController.h */,
+				357306111CE9E1E000652F19 /* ViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		357306121CE9E1E000652F19 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				357306191CE9E21400652F19 /* QQMessage.h */,
+				3573061A1CE9E21400652F19 /* QQMessage.m */,
+				3573061C1CE9E42300652F19 /* QQMessageFrame.h */,
+				3573061D1CE9E42300652F19 /* QQMessageFrame.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		357306131CE9E1E000652F19 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				357306141CE9E1E000652F19 /* AppDelegate.h */,
+				357306151CE9E1E000652F19 /* AppDelegate.m */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		357306161CE9E1E000652F19 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3573061F1CE9EB2E00652F19 /* QQMessageCell.h */,
+				357306201CE9EB2E00652F19 /* QQMessageCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		357306221CEA28CA00652F19 /* Catagory */ = {
+			isa = PBXGroup;
+			children = (
+				357306231CEA292C00652F19 /* UIImage+ensize.h */,
+				357306241CEA292C00652F19 /* UIImage+ensize.m */,
+			);
+			path = Catagory;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		357305F11CE9DF0100652F19 /* 13-QQMessageCell */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 357306091CE9DF0100652F19 /* Build configuration list for PBXNativeTarget "13-QQMessageCell" */;
+			buildPhases = (
+				357305EE1CE9DF0100652F19 /* Sources */,
+				357305EF1CE9DF0100652F19 /* Frameworks */,
+				357305F01CE9DF0100652F19 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "13-QQMessageCell";
+			productName = "13-QQMessageCell";
+			productReference = 357305F21CE9DF0100652F19 /* 13-QQMessageCell.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		357305EA1CE9DF0100652F19 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "林威";
+				TargetAttributes = {
+					357305F11CE9DF0100652F19 = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 357305ED1CE9DF0100652F19 /* Build configuration list for PBXProject "13-QQMessageCell" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 357305E91CE9DF0100652F19;
+			productRefGroup = 357305F31CE9DF0100652F19 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				357305F11CE9DF0100652F19 /* 13-QQMessageCell */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		357305F01CE9DF0100652F19 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3573060D1CE9E12B00652F19 /* messages.plist in Resources */,
+				357306051CE9DF0100652F19 /* LaunchScreen.storyboard in Resources */,
+				357306021CE9DF0100652F19 /* Assets.xcassets in Resources */,
+				357306001CE9DF0100652F19 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		357305EE1CE9DF0100652F19 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				357306171CE9E1E000652F19 /* ViewController.m in Sources */,
+				3573061B1CE9E21400652F19 /* QQMessage.m in Sources */,
+				357306251CEA292C00652F19 /* UIImage+ensize.m in Sources */,
+				357305F71CE9DF0100652F19 /* main.m in Sources */,
+				357306181CE9E1E000652F19 /* AppDelegate.m in Sources */,
+				3573061E1CE9E42300652F19 /* QQMessageFrame.m in Sources */,
+				357306211CE9EB2E00652F19 /* QQMessageCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		357305FE1CE9DF0100652F19 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				357305FF1CE9DF0100652F19 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		357306031CE9DF0100652F19 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				357306041CE9DF0100652F19 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		357306071CE9DF0100652F19 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		357306081CE9DF0100652F19 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3573060A1CE9DF0100652F19 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "13-QQMessageCell/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "linw.-3-QQMessageCell";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		3573060B1CE9DF0100652F19 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "13-QQMessageCell/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "linw.-3-QQMessageCell";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		357305ED1CE9DF0100652F19 /* Build configuration list for PBXProject "13-QQMessageCell" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				357306071CE9DF0100652F19 /* Debug */,
+				357306081CE9DF0100652F19 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		357306091CE9DF0100652F19 /* Build configuration list for PBXNativeTarget "13-QQMessageCell" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3573060A1CE9DF0100652F19 /* Debug */,
+				3573060B1CE9DF0100652F19 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 357305EA1CE9DF0100652F19 /* Project object */;
+}
