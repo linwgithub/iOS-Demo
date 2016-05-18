@@ -11,8 +11,10 @@
 #import "QQMessageFrame.h"
 #import "QQMessageCell.h"
 
-@interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
+@interface ViewController ()<UITableViewDelegate,UITableViewDataSource,UITextFieldDelegate>
 
+
+@property (weak, nonatomic) IBOutlet UITextField *textLable;
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 
@@ -82,11 +84,46 @@
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
     // Do any additional setup after loading the view, typically from a nib.
+    
+    // 2.监听键盘的通知
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWillChangeFrame:) name:UIKeyboardWillChangeFrameNotification object:nil];
+    
+    //    // 3.设置文本框左边显示的view
+    //    self.textLable.leftView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 8, 0)];
+    //    // 永远显示
+    //    self.textLable.leftViewMode = UITextFieldViewModeAlways;
+    //    self.textLable.delegate = self;
+    
+    
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)keyboardWillChangeFrame:(NSNotification *)note
+{
+    //设置窗口颜色
+    [self.view.window setBackgroundColor:[UIColor whiteColor]];
+    
+    //获取键盘动画的时间
+    CGFloat duration = [note.userInfo[UIKeyboardAnimationDurationUserInfoKey]doubleValue];
+    
+    //获取键盘动画后的frame
+    CGRect transRect = [note.userInfo[UIKeyboardFrameEndUserInfoKey]CGRectValue];
+    
+    //计算键盘移动的Y
+    CGFloat transframeY = transRect.origin.y - self.view.bounds.size.height;
+    
+    //启动动画
+    [UIView animateWithDuration:duration animations:^{
+        self.view.transform = CGAffineTransformMakeTranslation(0, transframeY);
+    }];
 }
 
+- (void)dealloc
+{
+    [[NSNotificationCenter defaultCenter]removeObserver:self];
+}
+
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView
+{
+    [self.view endEditing:YES];
+}
 @end
