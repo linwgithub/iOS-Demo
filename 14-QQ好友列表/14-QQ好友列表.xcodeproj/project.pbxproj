@@ -7,18 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3560AE8A1CEFE67F002785D8 /* FriendsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3560AE891CEFE67F002785D8 /* FriendsViewController.m */; };
 		35910DBB1CEF6D3F007592CE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 35910DBA1CEF6D3F007592CE /* main.m */; };
 		35910DC41CEF6D3F007592CE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35910DC21CEF6D3F007592CE /* Main.storyboard */; };
 		35910DC61CEF6D3F007592CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35910DC51CEF6D3F007592CE /* Assets.xcassets */; };
 		35910DC91CEF6D3F007592CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35910DC71CEF6D3F007592CE /* LaunchScreen.storyboard */; };
 		35910DD11CEF6D95007592CE /* friends.plist in Resources */ = {isa = PBXBuildFile; fileRef = 35910DD01CEF6D95007592CE /* friends.plist */; };
-		35910DDB1CEF6DFF007592CE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35910DD51CEF6DFF007592CE /* ViewController.m */; };
 		35910DDC1CEF6DFF007592CE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 35910DD91CEF6DFF007592CE /* AppDelegate.m */; };
 		35910DDF1CEF6E8C007592CE /* Friends.m in Sources */ = {isa = PBXBuildFile; fileRef = 35910DDE1CEF6E8C007592CE /* Friends.m */; };
 		35910DE21CEF6F98007592CE /* FriendsGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 35910DE11CEF6F98007592CE /* FriendsGroup.m */; };
+		35B7BAB01CF00A9800374184 /* FriendsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 35B7BAAF1CF00A9800374184 /* FriendsCell.m */; };
+		35B7BAB31CF0117E00374184 /* FriendsGroupHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 35B7BAB21CF0117E00374184 /* FriendsGroupHeaderView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3560AE881CEFE67F002785D8 /* FriendsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FriendsViewController.h; sourceTree = "<group>"; };
+		3560AE891CEFE67F002785D8 /* FriendsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FriendsViewController.m; sourceTree = "<group>"; };
 		35910DB61CEF6D3F007592CE /* 14-QQ好友列表.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "14-QQ好友列表.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		35910DBA1CEF6D3F007592CE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		35910DC31CEF6D3F007592CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -26,14 +30,16 @@
 		35910DC81CEF6D3F007592CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		35910DCA1CEF6D3F007592CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		35910DD01CEF6D95007592CE /* friends.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = friends.plist; path = "../../../../../0403/代码/06-QQ好友列表(处理头部控件的点击)/03-QQ好友列表/friends.plist"; sourceTree = "<group>"; };
-		35910DD41CEF6DFF007592CE /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		35910DD51CEF6DFF007592CE /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		35910DD81CEF6DFF007592CE /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		35910DD91CEF6DFF007592CE /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		35910DDD1CEF6E8C007592CE /* Friends.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Friends.h; sourceTree = "<group>"; };
 		35910DDE1CEF6E8C007592CE /* Friends.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Friends.m; sourceTree = "<group>"; };
 		35910DE01CEF6F98007592CE /* FriendsGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FriendsGroup.h; sourceTree = "<group>"; };
 		35910DE11CEF6F98007592CE /* FriendsGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FriendsGroup.m; sourceTree = "<group>"; };
+		35B7BAAE1CF00A9800374184 /* FriendsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FriendsCell.h; sourceTree = "<group>"; };
+		35B7BAAF1CF00A9800374184 /* FriendsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FriendsCell.m; sourceTree = "<group>"; };
+		35B7BAB11CF0117E00374184 /* FriendsGroupHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FriendsGroupHeaderView.h; sourceTree = "<group>"; };
+		35B7BAB21CF0117E00374184 /* FriendsGroupHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FriendsGroupHeaderView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,8 +105,8 @@
 		35910DD31CEF6DFF007592CE /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				35910DD41CEF6DFF007592CE /* ViewController.h */,
-				35910DD51CEF6DFF007592CE /* ViewController.m */,
+				3560AE881CEFE67F002785D8 /* FriendsViewController.h */,
+				3560AE891CEFE67F002785D8 /* FriendsViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -128,6 +134,10 @@
 		35910DDA1CEF6DFF007592CE /* View */ = {
 			isa = PBXGroup;
 			children = (
+				35B7BAAE1CF00A9800374184 /* FriendsCell.h */,
+				35B7BAAF1CF00A9800374184 /* FriendsCell.m */,
+				35B7BAB11CF0117E00374184 /* FriendsGroupHeaderView.h */,
+				35B7BAB21CF0117E00374184 /* FriendsGroupHeaderView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -203,7 +213,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				35910DDB1CEF6DFF007592CE /* ViewController.m in Sources */,
+				35B7BAB31CF0117E00374184 /* FriendsGroupHeaderView.m in Sources */,
+				3560AE8A1CEFE67F002785D8 /* FriendsViewController.m in Sources */,
+				35B7BAB01CF00A9800374184 /* FriendsCell.m in Sources */,
 				35910DE21CEF6F98007592CE /* FriendsGroup.m in Sources */,
 				35910DBB1CEF6D3F007592CE /* main.m in Sources */,
 				35910DDC1CEF6DFF007592CE /* AppDelegate.m in Sources */,
@@ -356,6 +368,7 @@
 				35910DCF1CEF6D3F007592CE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

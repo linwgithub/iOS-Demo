@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  FriendsViewController.h
 //  14-QQ好友列表
 //
 //  Created by 林威 on 16/5/21.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface FriendsViewController : UITableViewController
 
 @end
-
