@@ -21,7 +21,6 @@
 @end
 
 @implementation ViewController
-
 /**
  *  随机选中
  */

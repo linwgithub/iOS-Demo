@@ -17,13 +17,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9M7-XJ-CT2">
-                                <rect key="frame" x="0.0" y="97" width="320" height="216"/>
-                                <connections>
-                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="grB-8k-CtC"/>
-                                    <outlet property="delegate" destination="BYZ-38-t0r" id="JYP-WM-jpr"/>
-                                </connections>
-                            </pickerView>
                             <view alpha="0.20000000000000001" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LOM-r9-MJK">
                                 <rect key="frame" x="0.0" y="20" width="320" height="44"/>
                                 <subviews>
@@ -42,6 +35,15 @@
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z5c-ka-IFS">
+                                        <rect key="frame" x="260" y="0.0" width="60" height="44"/>
+                                        <state key="normal" title="国旗">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="rzl-w2-QKD" kind="presentation" id="NLb-DJ-VGe"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.38461631870000001" green="0.71930247290000005" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
@@ -81,6 +83,13 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9M7-XJ-CT2">
+                                <rect key="frame" x="0.0" y="86" width="320" height="216"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="grB-8k-CtC"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="JYP-WM-jpr"/>
+                                </connections>
+                            </pickerView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -94,7 +103,45 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="216" y="339"/>
+            <point key="canvasLocation" x="122" y="323"/>
+        </scene>
+        <!--Flags View Controller-->
+        <scene sceneID="dNs-8l-Bkh">
+            <objects>
+                <viewController id="rzl-w2-QKD" customClass="FlagsViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="KDP-0M-YQk"/>
+                        <viewControllerLayoutGuide type="bottom" id="tWr-5N-c7e"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="xM3-rx-4jx">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QnU-w0-tti">
+                                <rect key="frame" x="0.0" y="46" width="320" height="216"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="rzl-w2-QKD" id="Ch0-Qb-AXD"/>
+                                    <outlet property="delegate" destination="rzl-w2-QKD" id="v9h-XU-npg"/>
+                                </connections>
+                            </pickerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="country" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uk6-fu-vFW">
+                                <rect key="frame" x="94" y="317" width="132" height="49"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ONb-Ac-5FZ"/>
+                    <connections>
+                        <outlet property="countryLabel" destination="Uk6-fu-vFW" id="YHO-D4-epW"/>
+                        <outlet property="countryPicker" destination="QnU-w0-tti" id="l7g-dh-1nb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dIl-kA-qka" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="659" y="339"/>
         </scene>
     </scenes>
 </document>
