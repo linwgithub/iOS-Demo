@@ -1,0 +1,19 @@
+//
+//  PrefixHeader.pch
+//  13-QQMessageCell
+//
+//  Created by 林威 on 16/5/21.
+//  Copyright © 2016年 林威. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* PrefixHeader_pch */
+/**
+ *  系统NSlog
+ */
+#define LWLog(...) NSLog(__VA_ARGD__)
